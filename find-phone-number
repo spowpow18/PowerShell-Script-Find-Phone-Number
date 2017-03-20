@@ -1,0 +1,1 @@
+get-aduser -SearchBase "OU=yourouhere,OU=yourouhere,dc=yourdcnamehere,dc=com" -filter * -properties telephoneNumber | where telephoneNumber -eq "N/A" | Export-Csv c:\naphone.csv
